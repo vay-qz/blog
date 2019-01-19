@@ -26,7 +26,8 @@ module.exports = {
 		{
 			title:'多线程',
 			children:[
-		      '/threads/thread.md'
+		      '/threads/thread.md',
+		      '/threads/volatile.md'
 			]
 		}
 	  ],
