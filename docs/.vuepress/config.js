@@ -1,7 +1,6 @@
 module.exports = {
   base: '/blog/',
   title: '纸人的博客',
-  description: 'Just playing around',
   port: '8081',
   themeConfig:{
 	  nav:[
@@ -16,17 +15,17 @@ module.exports = {
 		      '/common/vuepressBuildTwo'
 			]
 		},
-		/*
 		{
 			title:'虚拟机',
 			children:[
-		      '/virtual/'
+		      '/jvm/java内存区域'
 			]
-		},*/
+		},
 		{
 			title:'多线程',
 			children:[
 		      '/threads/thread.md',
+		      '/threads/ThreadPoolExecutor.md',
 		      '/threads/volatile.md'
 			]
 		}
@@ -34,5 +33,9 @@ module.exports = {
       
 	sidebarDepth: 2,
     lastUpdated: 'Last Updated', 
-  }
+  },
+  markdown: {
+	lineNumbers: true,
+	toc: { includeLevel: [2, 3, 4, 5, 6] }
+  },
 }

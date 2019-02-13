@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+  "dependencies": {
+    "gitalk": "^1.5.0",
+    "markdown-it-table-of-contents": "^0.4.3"
   }
 }
