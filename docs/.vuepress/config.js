@@ -28,6 +28,13 @@ module.exports = {
 		      '/threads/ThreadPoolExecutor.md',
 		      '/threads/volatile.md'
 			]
+		},
+		{
+			title:'问题',
+			children:[
+		      '/problem/jvmproblem.md',
+		      '/problem/threadproblem.md'
+			]
 		}
 	  ],
       
