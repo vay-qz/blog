@@ -1,10 +1,10 @@
 module.exports = {
   base: '/blog/',
-  title: '纸人的博客',
+  title: 'HOME',
   port: '8081',
   themeConfig:{
+	  logo: '/img/logo.jpg',	
 	  nav:[
-	    {text:'主页', link:'/'},
 	    {text:'Github', link:'https://github.com/VAS-QZ'},
 	  ],
 	  sidebar: [
