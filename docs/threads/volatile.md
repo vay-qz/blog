@@ -1,3 +1,7 @@
+---
+sidebarDepth: 0
+next: false
+---
 # volatile详解
 
 [[toc]]

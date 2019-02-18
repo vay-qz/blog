@@ -1,3 +1,7 @@
+---
+sidebarDepth: 0
+---
+
 # Java内存区域
 
 [[toc]]

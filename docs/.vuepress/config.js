@@ -18,7 +18,10 @@ module.exports = {
 		{
 			title:'虚拟机',
 			children:[
-		      '/jvm/java内存区域'
+		      '/jvm/java内存区域',
+			  '/jvm/垃圾收集器',
+			  '/jvm/内存分配策略',
+			  '/jvm/IDEA调优实战'
 			]
 		},
 		{

@@ -1,5 +1,6 @@
 ---
 prev: false
+sidebarDepth: 0
 ---
 
 

@@ -1,3 +1,7 @@
+---
+sidebarDepth: 0
+---
+
 # IDEA调优实战
 
 [[toc]]
