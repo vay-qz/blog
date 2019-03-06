@@ -33,6 +33,12 @@ module.exports = {
 			]
 		},
 		{
+			title:'算法',
+			children:[
+		      '/algorithm/排序.md'
+			]
+		},
+		{
 			title:'问题',
 			children:[
 		      '/problem/jvmproblem.md',
