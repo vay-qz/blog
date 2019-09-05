@@ -4,7 +4,7 @@ sidebarDepth: 0
 ---
 
 
-# Java多线程----Thread类学习
+# Thread
 
 [[toc]]
 
