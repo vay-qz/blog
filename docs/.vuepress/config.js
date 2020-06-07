@@ -1,5 +1,4 @@
 module.exports = {
-  base: '/blog/',
   title: 'HOME',
   port: '8081',
   themeConfig:{
