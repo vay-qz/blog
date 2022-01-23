@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>享元模式 | HOME</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.b7772529.css" as="style"><link rel="preload" href="/assets/js/app.9d904b3d.js" as="script"><link rel="preload" href="/assets/js/24.195712b2.js" as="script"><link rel="prefetch" href="/assets/js/10.9013529b.js"><link rel="prefetch" href="/assets/js/11.869fab07.js"><link rel="prefetch" href="/assets/js/12.3f5f9871.js"><link rel="prefetch" href="/assets/js/13.6659e7d3.js"><link rel="prefetch" href="/assets/js/14.1d3506d2.js"><link rel="prefetch" href="/assets/js/15.3080db10.js"><link rel="prefetch" href="/assets/js/16.4fc57f88.js"><link rel="prefetch" href="/assets/js/17.da628472.js"><link rel="prefetch" href="/assets/js/18.39e95fc4.js"><link rel="prefetch" href="/assets/js/19.b288d28b.js"><link rel="prefetch" href="/assets/js/2.921b713c.js"><link rel="prefetch" href="/assets/js/20.41d0b1d4.js"><link rel="prefetch" href="/assets/js/21.e07d8119.js"><link rel="prefetch" href="/assets/js/22.fbdb04d1.js"><link rel="prefetch" href="/assets/js/23.11e9b6d7.js"><link rel="prefetch" href="/assets/js/25.4cbdb8d4.js"><link rel="prefetch" href="/assets/js/26.e23dc3b4.js"><link rel="prefetch" href="/assets/js/27.0d8a5a1b.js"><link rel="prefetch" href="/assets/js/28.52693a31.js"><link rel="prefetch" href="/assets/js/29.9011c4b0.js"><link rel="prefetch" href="/assets/js/3.e3aace97.js"><link rel="prefetch" href="/assets/js/30.f56da937.js"><link rel="prefetch" href="/assets/js/31.3cccece4.js"><link rel="prefetch" href="/assets/js/32.57d6a71d.js"><link rel="prefetch" href="/assets/js/33.1221069e.js"><link rel="prefetch" href="/assets/js/34.da1f1c37.js"><link rel="prefetch" href="/assets/js/35.dbb58bf8.js"><link rel="prefetch" href="/assets/js/36.a5ab3b08.js"><link rel="prefetch" href="/assets/js/37.6416dd30.js"><link rel="prefetch" href="/assets/js/38.4983b3e1.js"><link rel="prefetch" href="/assets/js/39.13a3b5bd.js"><link rel="prefetch" href="/assets/js/4.4eb6808f.js"><link rel="prefetch" href="/assets/js/40.b680f394.js"><link rel="prefetch" href="/assets/js/41.49f96a1c.js"><link rel="prefetch" href="/assets/js/42.c92c60eb.js"><link rel="prefetch" href="/assets/js/43.a425f3b7.js"><link rel="prefetch" href="/assets/js/44.096a4db6.js"><link rel="prefetch" href="/assets/js/45.b06e8bd6.js"><link rel="prefetch" href="/assets/js/46.844e3c11.js"><link rel="prefetch" href="/assets/js/47.f4c02112.js"><link rel="prefetch" href="/assets/js/5.6fc37189.js"><link rel="prefetch" href="/assets/js/6.9e5db50c.js"><link rel="prefetch" href="/assets/js/7.015c0e7f.js"><link rel="prefetch" href="/assets/js/8.05b4ddad.js"><link rel="prefetch" href="/assets/js/9.43b0d755.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b7772529.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/logo.jpg" alt="HOME" class="logo"> <span class="site-name can-hide">HOME</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/catalog.html" class="nav-link">目录</a></div><div class="nav-item"><a href="https://github.com/vay-qz" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/catalog.html" class="nav-link">目录</a></div><div class="nav-item"><a href="https://github.com/vay-qz" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <!----> </div> <div class="page"> <div class="content"><h1 id="享元模式"><a href="#享元模式" aria-hidden="true" class="header-anchor">#</a> 享元模式</h1> <p>享元模式的英文原名为Flyweight Pattern，又可以称之为蝇量模式。不够这里使用享元模式对其进行命名更能反映模式的用意：享元，共享元数据。享元模式以<strong>共享</strong>的方式高效的支持<strong>细颗粒</strong>的对象。</p> <h3 id="场景假设"><a href="#场景假设" aria-hidden="true" class="header-anchor">#</a> 场景假设</h3> <p>现在我们模拟围棋对弈的场景，对弈双方每次下一个棋子，如果二人棋力相当，那么将有可能会出现棋盘被下满的场景</p> <p>那通常情况下面对这样的场景我们应该如何做呢？首先新建一个棋子类，用来保存棋子的颜色和位置，示例代码如下</p> <div class="language-Java line-numbers-mode"><pre class="language-java"><code><span class="token annotation punctuation">@Getter</span>
+<span class="token annotation punctuation">@Setter</span>
+<span class="token annotation punctuation">@AllArgsConstructor</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Chess</span> <span class="token keyword">implements</span> <span class="token class-name">Chess</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">private</span> String color<span class="token punctuation">;</span>
+
+    <span class="token keyword">private</span> String X<span class="token punctuation">;</span>
+
+    <span class="token keyword">private</span> String Y<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>于是我们在下棋的时候每当对弈双方下一个子时，我们就需要new一个棋子出来，如果双方把棋局下满的话，那我们就需要new几百个棋子出来，这无疑使造成了内存的浪费，于是我们对上述场景进行分析后，发现了以下几个特点</p> <ol><li>棋子只有黑白两种颜色，同样颜色的棋子本身并无不同</li> <li>棋子本身并不需要知道自己的坐标</li></ol> <p>以上就是我们的场景假设，接下来我们来尝试使用享元模式来解决这个问题</p> <h3 id="模式介绍"><a href="#模式介绍" aria-hidden="true" class="header-anchor">#</a> 模式介绍</h3> <h4 id="概念引入"><a href="#概念引入" aria-hidden="true" class="header-anchor">#</a> 概念引入</h4> <p>在具体介绍享元模式之前，我们首先来介绍两个概念</p> <ul><li>内部状态：储存在享元对象内部，不会随着外界的影响而改变的状态，内部状态可以共享</li> <li>外部状态：会随着外界的影响而改变的状态，享元对象不对其进行保存，外部状态的保存应该由客户端负责</li></ul> <h4 id="类图"><a href="#类图" aria-hidden="true" class="header-anchor">#</a> 类图</h4> <p><img src="/assets/img/flyweight.873270c0.jpg" alt></p> <p>在享元模式中，有四个角色</p> <ul><li>抽象享元类：享元类的父类，通常是一个接口或者抽象类，规定了享元类公共的方法</li> <li>具体享元类：共享的享元类，类中提供了内部状态的储存空间</li> <li>不共享具体享元类：不共享的享元类，同样是抽象享元类的子类，但是并不需要进行共享</li> <li>享元工厂：生产具体享元类，并保存已生产的享元类</li></ul> <p>以上就是享元模式的概念介绍，接下来我们用享元模式来解决场景假设中的两个问题</p> <p>首先我们对棋子类进行属性的分类。很明显，棋子的颜色不会随着外界环境而发生改变，所以棋子的颜色是内部状态。棋子的坐标会随着对弈双方的选择而不同，属于外部状态。于是我们对棋子类进行了更改</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token annotation punctuation">@Getter</span>
+<span class="token annotation punctuation">@Setter</span>
+<span class="token annotation punctuation">@AllArgsConstructor</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ConcreteChess</span> <span class="token keyword">implements</span> <span class="token class-name">Chess</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">private</span> String color<span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">show</span><span class="token punctuation">(</span>String x<span class="token punctuation">,</span> String y<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>color <span class="token operator">+</span> <span class="token string">&quot; X:&quot;</span> <span class="token operator">+</span> x <span class="token operator">+</span> <span class="token string">&quot;Y:&quot;</span> <span class="token operator">+</span> y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>我们对棋子的内部状态进行保存，并且提供一个方法来接收外部状态，至于外部状态应该如何保存，享元模式并不关心。我们同时增加了一个棋子的工厂类，工厂类中保存已创建的棋子</p> <div class="language-Java line-numbers-mode"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ChessFactory</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">private</span> Map<span class="token generics function"><span class="token punctuation">&lt;</span>String<span class="token punctuation">,</span> Chess<span class="token punctuation">&gt;</span></span> chessPool <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashMap</span><span class="token operator">&lt;</span><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> Chess <span class="token function">getChess</span><span class="token punctuation">(</span>String color<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        Chess res <span class="token operator">=</span> chessPool<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>color<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>res <span class="token operator">==</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            res <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ConcreteChess</span><span class="token punctuation">(</span>color<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            chessPool<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span>color<span class="token punctuation">,</span> res<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> res<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> res<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>于是当我们使用享元模式优化过的代码时，就不会再造成内存的浪费了。</p> <h3 id="优秀享元模式案例——字符串常量池"><a href="#优秀享元模式案例——字符串常量池" aria-hidden="true" class="header-anchor">#</a> 优秀享元模式案例——字符串常量池</h3> <p>字符串常量池就是享元模式的优秀实现，接下来我们来根据源码来分析一下字符串常量池是如何做的</p> <blockquote><div class="language-c++ line-numbers-mode"><pre class="language-text"><code>Symbol* SymbolTable::lookup(const char* name, int len, TRAPS) {
+unsigned int hashValue = hash_symbol(name, len);
+int index = the_table()-&gt;hash_to_index(hashValue);
+
+Symbol* s = the_table()-&gt;lookup(index, name, len, hashValue);
+
+// Found
+if (s != NULL) return s;
+
+// Grab SymbolTable_lock first.
+MutexLocker ml(SymbolTable_lock, THREAD);
+
+// Otherwise, add to symbol to table
+return the_table()-&gt;basic_add(index, (u1*)name, len, hashValue, true, CHECK_NULL);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div></blockquote> <p>当我们调用String#intern方法时，jvm就会去字符串常量池中进行查找，如果找到则返回其引用</p> <blockquote><div class="language-c++ line-numbers-mode"><pre class="language-text"><code>Symbol* SymbolTable::basic_add(int index_arg, u1 *name, int len,
+                               unsigned int hashValue_arg, bool c_heap, TRAPS) {
+  /*----删去了一些和本帖无关的代码----*/
+
+  // Create a new symbol.
+  Symbol* sym = allocate_symbol(name, len, c_heap, CHECK_NULL);
+  assert(sym-&gt;equals((char*)name, len), &quot;symbol must be properly initialized&quot;);
+
+  HashtableEntry&lt;Symbol*, mtSymbol&gt;* entry = new_entry(hashValue, sym);
+  add_entry(index, entry);
+  return sym;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div></blockquote> <p>如果没找到则创建字符串的引用，将其保存到常量池，并且返回引用</p></div> <div class="page-edit"><!----> <!----></div> <!----> </div> <!----></div></div>
+    <script src="/assets/js/app.9d904b3d.js" defer></script><script src="/assets/js/24.195712b2.js" defer></script>
+  </body>
+</html>

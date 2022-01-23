@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>设计模式——单例模式 | HOME</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.b7772529.css" as="style"><link rel="preload" href="/assets/js/app.9d904b3d.js" as="script"><link rel="preload" href="/assets/js/43.a425f3b7.js" as="script"><link rel="prefetch" href="/assets/js/10.9013529b.js"><link rel="prefetch" href="/assets/js/11.869fab07.js"><link rel="prefetch" href="/assets/js/12.3f5f9871.js"><link rel="prefetch" href="/assets/js/13.6659e7d3.js"><link rel="prefetch" href="/assets/js/14.1d3506d2.js"><link rel="prefetch" href="/assets/js/15.3080db10.js"><link rel="prefetch" href="/assets/js/16.4fc57f88.js"><link rel="prefetch" href="/assets/js/17.da628472.js"><link rel="prefetch" href="/assets/js/18.39e95fc4.js"><link rel="prefetch" href="/assets/js/19.b288d28b.js"><link rel="prefetch" href="/assets/js/2.921b713c.js"><link rel="prefetch" href="/assets/js/20.41d0b1d4.js"><link rel="prefetch" href="/assets/js/21.e07d8119.js"><link rel="prefetch" href="/assets/js/22.fbdb04d1.js"><link rel="prefetch" href="/assets/js/23.11e9b6d7.js"><link rel="prefetch" href="/assets/js/24.195712b2.js"><link rel="prefetch" href="/assets/js/25.4cbdb8d4.js"><link rel="prefetch" href="/assets/js/26.e23dc3b4.js"><link rel="prefetch" href="/assets/js/27.0d8a5a1b.js"><link rel="prefetch" href="/assets/js/28.52693a31.js"><link rel="prefetch" href="/assets/js/29.9011c4b0.js"><link rel="prefetch" href="/assets/js/3.e3aace97.js"><link rel="prefetch" href="/assets/js/30.f56da937.js"><link rel="prefetch" href="/assets/js/31.3cccece4.js"><link rel="prefetch" href="/assets/js/32.57d6a71d.js"><link rel="prefetch" href="/assets/js/33.1221069e.js"><link rel="prefetch" href="/assets/js/34.da1f1c37.js"><link rel="prefetch" href="/assets/js/35.dbb58bf8.js"><link rel="prefetch" href="/assets/js/36.a5ab3b08.js"><link rel="prefetch" href="/assets/js/37.6416dd30.js"><link rel="prefetch" href="/assets/js/38.4983b3e1.js"><link rel="prefetch" href="/assets/js/39.13a3b5bd.js"><link rel="prefetch" href="/assets/js/4.4eb6808f.js"><link rel="prefetch" href="/assets/js/40.b680f394.js"><link rel="prefetch" href="/assets/js/41.49f96a1c.js"><link rel="prefetch" href="/assets/js/42.c92c60eb.js"><link rel="prefetch" href="/assets/js/44.096a4db6.js"><link rel="prefetch" href="/assets/js/45.b06e8bd6.js"><link rel="prefetch" href="/assets/js/46.844e3c11.js"><link rel="prefetch" href="/assets/js/47.f4c02112.js"><link rel="prefetch" href="/assets/js/5.6fc37189.js"><link rel="prefetch" href="/assets/js/6.9e5db50c.js"><link rel="prefetch" href="/assets/js/7.015c0e7f.js"><link rel="prefetch" href="/assets/js/8.05b4ddad.js"><link rel="prefetch" href="/assets/js/9.43b0d755.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b7772529.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/logo.jpg" alt="HOME" class="logo"> <span class="site-name can-hide">HOME</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/catalog.html" class="nav-link">目录</a></div><div class="nav-item"><a href="https://github.com/vay-qz" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/catalog.html" class="nav-link">目录</a></div><div class="nav-item"><a href="https://github.com/vay-qz" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <!----> </div> <div class="page"> <div class="content"><h1 id="设计模式——单例模式"><a href="#设计模式——单例模式" aria-hidden="true" class="header-anchor">#</a> 设计模式——单例模式</h1> <p>单例模式是一种比较常见的设计模式，也是最简单的设计模式之一，属于创建性模式。</p> <p>单例模式中，简而言之就是单例对象的类只允许有一个实例对象存在。其概念及适用场景很容易理解，举个栗子，在公司中只有一台饮水机，每个员工需要喝水时都需要先获取饮水机的使用权然后才能接水。在上述例子中，饮水机就是单例类饮水机的实例对象。</p> <p>本文着重阐述单例模式的几种实现方式</p> <p><strong>单例模式有3个特点</strong></p> <ol><li>构造方法私有化</li> <li>实例化的变量引用私有化</li> <li>获取实例的方法共有</li></ol> <p>依据上述三个特点，就产生了如下代码</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token comment">/**
+ * 饿汉式
+ * 单例的初始化交给类初始化时去完成
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">StaticVarSingleton</span> <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> <span class="token keyword">final</span> <span class="token keyword">static</span> StaticVarSingleton INSTANCE <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">StaticVarSingleton</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">private</span> <span class="token function">StaticVarSingleton</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> StaticVarSingleton <span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> INSTANCE<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>上述代码实现了单例模式的3个特点，但是如果这个类一直都没有被使用到那岂不是白白的浪费了这些空间，于是我们对其做一些修改，完成代码如下</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token comment">/**
+ * 懒汉式
+ * 第一次使用时加载
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">SimpleSingleton</span> <span class="token punctuation">{</span>
+    <span class="token comment">//-----修改点1-----</span>
+    <span class="token keyword">private</span> <span class="token keyword">static</span> SimpleSingleton INSTANCE<span class="token punctuation">;</span>
+
+    <span class="token keyword">private</span> <span class="token function">SimpleSingleton</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> SimpleSingleton <span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">//-----修改点2-----</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>INSTANCE <span class="token operator">==</span> null<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            INSTANCE <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">SimpleSingleton</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> INSTANCE<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><p>ok，这样我们就完成了在其被使用之前不会浪费内存的操作</p> <p>其实在这里可以引入两个概念：<strong>懒汉式和饿汉式</strong>，这是单例模式的两个分类。</p> <blockquote><p>懒汉式：jvm启动时不实例对象，当第一次使用到时进行实例化</p> <p>饿汉式：jvm启动就实例化对象</p></blockquote> <p>我们回过头来再看一看刚刚的SimpleSingleton代码，从并发的角度来看，它是线程不安全的，当Thread1在执行INSTANCE = new SimpleSingleton();时，Thread2进入判断INSTANCE依然为null，这时Thread2也会new一个SimpleSingleton，此时就会存在线程安全问题。我们改进一下</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token comment">/**
+ * 懒汉式
+ * 第一次使用时加载
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">SimpleSingleton</span> <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> <span class="token keyword">static</span> SimpleSingleton INSTANCE<span class="token punctuation">;</span>
+
+    <span class="token keyword">private</span> <span class="token function">SimpleSingleton</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+	<span class="token comment">//-----改进点-----</span>
+    <span class="token keyword">public</span> <span class="token keyword">synchronized</span> <span class="token keyword">static</span> SimpleSingleton <span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>INSTANCE <span class="token operator">==</span> null<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            INSTANCE <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">SimpleSingleton</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> INSTANCE<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><p>我们在方法上添加了synchronized关键字后确实解决了线程安全的问题，但同样会造成另一个问题——性能下降。那么再换一种做法</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token comment">/**
+ * 懒汉式
+ * 第一次使用时加载
+ * 双重检查保证线程安全
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">DoubleCheckSingleton</span> <span class="token punctuation">{</span>
+ 	<span class="token comment">//-----改进点1-----</span>
+    <span class="token keyword">private</span> <span class="token keyword">volatile</span> <span class="token keyword">static</span> DoubleCheckSingleton INSTANCE<span class="token punctuation">;</span>
+
+    <span class="token keyword">private</span> <span class="token function">DoubleCheckSingleton</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> DoubleCheckSingleton <span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>INSTANCE <span class="token operator">==</span> null<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token comment">//-----改进点2-----</span>
+            <span class="token keyword">synchronized</span><span class="token punctuation">(</span>DoubleCheckSingleton<span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token keyword">if</span><span class="token punctuation">(</span>INSTANCE <span class="token operator">==</span> null<span class="token punctuation">)</span><span class="token punctuation">{</span>
+                    INSTANCE <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">DoubleCheckSingleton</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> INSTANCE<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><p>这一次我们使用的双重检查的方式，成功的实现了一个线程安全的懒汉式单例，那么除了这种方法之外，还有什么别的方式来保证其线程安全吗？</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token comment">/**
+ * 懒汉式
+ * 第一次使用时加载
+ * 利用JVM保证线程安全
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">InnerClassSingleton</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">private</span> <span class="token keyword">static</span> InnerClassSingleton INSTANCE<span class="token punctuation">;</span>
+
+    <span class="token keyword">private</span> <span class="token function">InnerClassSingleton</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> InnerClassSingleton <span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> SingletonInstance<span class="token punctuation">.</span>INSTANCE<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">/**
+     * 内部类中保持实例
+     */</span>
+    <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">class</span> <span class="token class-name">SingletonInstance</span> <span class="token punctuation">{</span>
+        <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">final</span> InnerClassSingleton INSTANCE <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">InnerClassSingleton</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><p>JVM可以保证类加载时是线程安全的，所有我们定义一个内部类，在用到时JVM会对内部类进行加载，并且保证其线程安全。</p> <p>以上就是我们比较经常用的几种实现单例模式的方式，<strong>but</strong>！还是会存在两个问题</p> <ol><li>如果直接使用反射，是不是就可以获得另一个INSTANCE</li> <li>这些单例实例都是不支持序列化的</li></ol> <p>当然我们手撕代码也是可以解决上述两个问题，但是自jdk1.5之后，Java为我们提供了一个更好的解决思路——enum</p> <p>引用《Effective Java》一书中的话——单元素的枚举类型已经成为实现Singleton的最佳方法。那么接下来就来介绍一下使用枚举类实现单例</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">enum</span> Singleton <span class="token punctuation">{</span>
+    INSTATNCE；
+        
+    <span class="token keyword">public</span> Singleton <span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> INSTATNCE<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>ok，代码简介明了，并没有想象中的一大堆代码</p> <h3 id="总结"><a href="#总结" aria-hidden="true" class="header-anchor">#</a> 总结</h3> <h5 id="实现分类"><a href="#实现分类" aria-hidden="true" class="header-anchor">#</a> 实现分类</h5> <ul><li>懒汉式
+<ul><li>获取实例方法前加synchronized</li> <li>双重检查</li> <li>内部类</li></ul></li> <li>饿汉式
+<ul><li>静态变量赋值</li> <li>静态代码块为静态变量赋值</li></ul></li> <li>最优单例实现：enum</li></ul> <h5 id="单例模式的实现中考虑的问题"><a href="#单例模式的实现中考虑的问题" aria-hidden="true" class="header-anchor">#</a> 单例模式的实现中考虑的问题</h5> <ol><li>线程安全</li> <li>效率</li> <li>抵御反射攻击</li> <li>序列化</li></ol> <h3 id="参考博客"><a href="#参考博客" aria-hidden="true" class="header-anchor">#</a> 参考博客</h3> <p><a href="https://www.cnblogs.com/chiclee/p/9097772.html" target="_blank" rel="noopener noreferrer">为什么要用枚举实现单例模式（避免反射、序列化问题）<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></div> <div class="page-edit"><!----> <!----></div> <!----> </div> <!----></div></div>
+    <script src="/assets/js/app.9d904b3d.js" defer></script><script src="/assets/js/43.a425f3b7.js" defer></script>
+  </body>
+</html>
